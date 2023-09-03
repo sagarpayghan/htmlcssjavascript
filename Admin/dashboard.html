@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- sidebar starts -->
+    <nav class="sidebar">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="" class="logo-img">
+            <span class="logo-text">AdminPanel</span>
+        </a>
+        <div class="nav-items">
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-rounded icon">dashboard</span>
+                        <span class="link-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-rounded icon">leaderboard</span>
+                        <span class="link-text">Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-rounded icon">error</span>
+                        <span class="link-text">Incidents</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-rounded icon">change_circle</span>
+                        <span class="link-text">Changes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-rounded icon">inventory</span>
+                        <span class="link-text">Report</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="logout-mode">
+                <li class="logout">
+                    <a href="#">
+                        <span class="material-symbols-rounded icon">logout</span>
+                        <span class="link-text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <a href="#">
+                        <span class="material-symbols-rounded icon">dark_mode</span>
+                        <span class="link-text">Dark Mode</span>
+                    </a>
+                    <div class="switch">
+                        <span class="toggle"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!-- sidebar end -->
+<!-- main content -->
+<section class="main-content">
+    <!-- navbar start -->
+    <nav class="navbar">
+        <span class="material-symbols-rounded menu">menu</span>
+        <div class="search-box">
+            <span class="material-symbols-rounded search-icon">search</span>
+            <input type="text" placeholder="Search here...">
+        </div>
+        <div class="select-menu open">
+            <div class="select-btn">
+        <img src="images/profile.JPG" alt="" class="profile-img">
+            </div>
+
+        <ul class="options">
+            <li class="option"><a href="">item-1</a></li>
+            <li class="option"><a href="">item-2</a></li>
+            <li class="option"><a href="">item-3</a></li>
+        </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <div class="container">
+        <table class="content-table">
+            <colgroup>
+                <col width="5%" />
+                <col width="10%" />
+                <col width="15%" />
+                <col width="15%" />
+                <col width="10%" />
+                <col width="25%" />
+                <col width="10%" />
+                <col width="10%" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><div class="th"><span class="text">ID</span> <span class="material-symbols-rounded dropdown-icon">arrow_drop_down</span></div></th>
+                    <th><div class="th"><span class="text">TT Number</span> <span class="material-symbols-rounded dropdown-icon">arrow_drop_down</span></div></th>
+                    <th><div class="th"><span class="text">Open Time</span> <span class="material-symbols-rounded dropdown-icon">arrow_drop_down</span></div></th>
+                    <th><div class="th"><span class="text">Close Time</span> <span class="material-symbols-rounded dropdown-icon">arrow_drop_down</span></div></th>
+                    <th><div class="th"><span class="text">Bucket</span> <span class="material-symbols-rounded dropdown-icon">arrow_drop_down</span></div></th>
+                    <th><div class="th"><span class="text">Title</span> <span class="material-symbols-rounded dropdown-icon">arrow_drop_down</span></div></th>
+                    <th><div class="th"><span class="text">Status</span> <span class="material-symbols-rounded dropdown-icon">arrow_drop_down</span></div></th>
+                    <th><div class="th"><span class="text">Action</span></div></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active-row">
+                    <td>1</td>
+                    <td>IM123456</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>transport</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum adipisci in aspernatur!</td>
+                    <td>open</td>
+                    <td>
+                        <span class="material-symbols-rounded btn-tbl">visibility</span>
+                        <span class="material-symbols-rounded btn-tbl">edit</span>
+                        <span class="material-symbols-rounded btn-tbl">delete</span>
+             
+                    </td>
+                </tr>
+           
+                <tr>
+                    <td>1</td>
+                    <td>IM123456</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>transport</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum adipisci in aspernatur!</td>
+                    <td>open</td>
+                    <td>
+                        <span class="material-symbols-rounded btn-tbl">visibility</span>
+                        <span class="material-symbols-rounded btn-tbl">edit</span>
+                        <span class="material-symbols-rounded btn-tbl">delete</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>IM123456</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>transport</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum adipisci in aspernatur!</td>
+                    <td>open</td>
+                    <td>
+                        <span class="material-symbols-rounded btn-tbl">visibility</span>
+                        <span class="material-symbols-rounded btn-tbl">edit</span>
+                        <span class="material-symbols-rounded btn-tbl">delete</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>IM123456</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>transport</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum adipisci in aspernatur!</td>
+                    <td>open</td>
+                    <td>
+                        <span class="material-symbols-rounded btn-tbl">visibility</span>
+                        <span class="material-symbols-rounded btn-tbl">edit</span>
+                        <span class="material-symbols-rounded btn-tbl">delete</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>IM123456</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>transport</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum adipisci in aspernatur!</td>
+                    <td>open</td>
+                    <td>
+                        <span class="material-symbols-rounded btn-tbl">visibility</span>
+                        <span class="material-symbols-rounded btn-tbl">edit</span>
+                        <span class="material-symbols-rounded btn-tbl">delete</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>IM123456</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>10/12/2023 12:23 hrs</td>
+                    <td>transport</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum adipisci in aspernatur!</td>
+                    <td>open</td>
+                    <td>
+                        <span class="material-symbols-rounded btn-tbl">visibility</span>
+                        <span class="material-symbols-rounded btn-tbl">edit</span>
+                        <span class="material-symbols-rounded btn-tbl">delete</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="copyright">
+             &copy;2023 all rights reserved
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+
+</html>
