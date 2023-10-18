@@ -1,0 +1,214 @@
+:root {
+    --gray: #DBDFE9;
+    --blue: #009ef7;
+    --green: #50cd89;
+    --purple: #7239ea;
+    --yellow: #ffc700;
+    --red: #f1416c;
+    --dark: #071437;
+    --blue-active: #0095e8;
+    --gray-active: #B5B5C3;
+    --green-active: #47be7d;
+    --purple-active: #5014d0;
+    --yellow-active: #f1bc00;
+    --red-active: #d9214e;
+    --dark-active: #050f29;
+    --blue-light: #f1faff;
+    --green-light: #e8fff3;
+    --purple-light: #f8f5ff;
+    --yellow-light: #fff8dd;
+    --red-light: #fff5f8;
+    --dark-light: #F1F1F2;
+    --text: #101221;
+    --text-light: #383a49;
+    --text-mute: #a1a5b7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--dark);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav .navbar {
+    height: 100%;
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+nav .navbar .logo a {
+    color:var(--dark-light);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+nav .navbar .nav-links {
+    height: 100%;
+    line-height: 70px;
+}
+
+nav .navbar .nav-links .links {
+    display: flex;
+}
+
+nav .navbar .nav-links .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0px 14px;
+}
+
+nav .navbar .nav-links .links li a{
+    color: var(--dark-light);
+    
+    text-decoration: none;
+    white-space: nowrap;
+    height: 100%;
+}
+
+nav .navbar .nav-links .links li .arrow {
+    height: 100%;
+    
+    width: 22px;
+    text-align: center;
+    color: var(--dark-light);
+    transition: all 0.3s ease;
+}
+
+nav .navbar .nav-links .links li .htmlcss-arrow,
+nav .navbar .nav-links .links li .js-arrow {
+    line-height: 70px;
+}
+nav .navbar .nav-links .links li:hover .htmlcss-arrow,
+nav .navbar .nav-links .links li:hover .js-arrow {
+    transform: rotate(180deg);
+}
+
+nav .navbar .nav-links .links .sub-menu {
+    position: absolute;
+    top:70px;
+    left:0px;
+    background-color: var(--dark);
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+nav .navbar .nav-links .links .sub-menu li {
+    padding: 0px 22px;
+    border-bottom: 1px solid rgba(255, 255,255, 0.1);
+}
+
+nav .navbar .nav-links .links .sub-menu li a {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav .navbar .nav-links .links li:hover .htmlcss-sub-menu,
+nav .navbar .nav-links .links li:hover .js-sub-menu {
+    display: block;
+}
+
+.navbar .nav-links .links li .more-arrow {
+line-height: 40px;
+}
+
+nav .navbar .nav-links .links .more:hover .more-sub-menu {
+    display: block;
+}
+
+nav .navbar .nav-links .links .more .more-sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    display: none;
+}
+
+.search-box {
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+
+
+.search-box i {
+    position: absolute;
+    width:100%;
+    line-height: 40px;
+    height: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--dark-light);
+    cursor: pointer;
+}
+
+.search-box .input-box {
+    height: 60px;
+    width: 300px;
+    background-color: var(--dark);
+    position: absolute;
+    top: 80px;
+    right: calc(100% - 40px);
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.navbar.showInput .search-box .input-box{
+    top: 65px;
+    opacity: 1;
+    pointer-events:auto;
+}
+
+.search-box .input-box::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: var(--dark);
+    right: 10px;
+    top:-6px;
+    transform: rotate(45deg);
+}
+
+.search-box .input-box input {
+position: absolute;
+height: 35px;
+width: 280px;
+z-index: 98;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+outline: none;
+border: none;
+border-radius: 4px;
+padding: 0 15px;
+font-size: 16px;
+}
+
+
+@media (max-width:800px) {
+
+}

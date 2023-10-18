@@ -1,0 +1,126 @@
+:root {
+    --gray: #DBDFE9;
+    --blue: #009ef7;
+    --green: #50cd89;
+    --purple: #7239ea;
+    --yellow: #ffc700;
+    --red: #f1416c;
+    --dark: #071437;
+    --blue-active: #0095e8;
+    --gray-active: #B5B5C3;
+    --green-active: #47be7d;
+    --purple-active: #5014d0;
+    --yellow-active: #f1bc00;
+    --red-active: #d9214e;
+    --dark-active: #050f29;
+    --blue-light: #f1faff;
+    --green-light: #e8fff3;
+    --purple-light: #f8f5ff;
+    --yellow-light: #fff8dd;
+    --red-light: #fff5f8;
+    --dark-light: #F1F1F2;
+    --text: #101221;
+    --text-light: #383a49;
+    --text-mute: #a1a5b7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--text);
+    
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+}
+
+.form {
+    width: 400px;
+    background-color:white;
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.form header {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text);
+    
+    margin-bottom: 30px;
+}
+
+.form-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-field input {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: 1px solid var(--gray);
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.form-field input:focus {
+    outline: 1px solid var(--blue);
+}
+
+.eye-icon {
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+right:15px;
+color: var(--gray-active);
+cursor: pointer;
+}
+
+.eye-icon:hover {
+    color: var(--text-mute);
+}
+
+.form-field button {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border:none;
+    background-color: var(--blue);
+    color: var(--blue-light);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+} 
+
+.form-link.forgot-password {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.form-link.sign-up, .form-link.log-in {
+    margin-top: 20px;
+}
+
+.form-link a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.form-link a:hover {
+    text-decoration:underline;
+}
+
+.form-link span {
+    margin-top: 10px;
+}

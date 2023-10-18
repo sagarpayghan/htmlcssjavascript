@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin:0% 5%;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}

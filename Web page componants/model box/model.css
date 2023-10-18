@@ -1,0 +1,135 @@
+:root {
+    --gray: #DBDFE9;
+    --blue: #009ef7;
+    --green: #50cd89;
+    --purple: #7239ea;
+    --yellow: #ffc700;
+    --red: #f1416c;
+    --dark: #071437;
+    --blue-active: #0095e8;
+    --gray-active: #B5B5C3;
+    --green-active: #47be7d;
+    --purple-active: #5014d0;
+    --yellow-active: #f1bc00;
+    --red-active: #d9214e;
+    --dark-active: #050f29;
+    --blue-light: #f1faff;
+    --green-light: #e8fff3;
+    --purple-light: #f8f5ff;
+    --yellow-light: #fff8dd;
+    --red-light: #fff5f8;
+    --dark-light: #F1F1F2;
+    --text: #101221;
+    --text-light: #383a49;
+    --text-mute: #a1a5b7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--text);
+    
+}
+
+section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue-light);
+}
+
+button {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--blue-light);
+    padding: 14px 22px;
+    border:none;
+    background-color: var(--blue);
+    border-radius: 6px;
+    cursor: pointer;
+    
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    color:white;
+    background-color: var(--blue-active);
+}
+
+button.show-modal, .modal-box {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+section.active .show-modal {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+}
+
+section.active .overlay {
+    opacity: 1;
+    pointer-events:auto;
+}
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%) scale(1.2);
+    transition: all 0.3s ease;
+}
+
+section.active .modal-box {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.modal-box i {
+    font-size: 70px;
+    color: var(--blue);
+}
+
+.modal-box h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.modal-box h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.modal-box .buttons {
+    margin-top: 25px;
+}
+.modal-box button {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 0px 10px;
+}

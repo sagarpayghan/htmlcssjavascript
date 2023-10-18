@@ -1,0 +1,150 @@
+:root {
+    --gray: #DBDFE9;
+    --blue: #009ef7;
+    --green: #50cd89;
+    --purple: #7239ea;
+    --yellow: #ffc700;
+    --red: #f1416c;
+    --dark: #071437;
+    --blue-active: #0095e8;
+    --gray-active: #B5B5C3;
+    --green-active: #47be7d;
+    --purple-active: #5014d0;
+    --yellow-active: #f1bc00;
+    --red-active: #d9214e;
+    --dark-active: #050f29;
+    --gray-light:#f6f6f6;
+    --blue-light: #f1faff;
+    --green-light: #e8fff3;
+    --purple-light: #f8f5ff;
+    --yellow-light: #fff8dd;
+    --red-light: #fff5f8;
+    --dark-light: #F1F1F2;
+    --text: #181c32;
+    --text-light: #3f4254;
+    --text-mute: #a1a5b7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Sans-Serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--dark); */
+    height: 100vh;
+}
+
+.btn {
+    padding: 6px 12px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.btn-sm {
+    padding: 6px 8px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+.btn-blue {
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--blue-light);
+}
+
+.btn-blue:hover {
+    background-color: var(--blue-active);
+    color: white;
+}
+
+/* next */
+
+.btn-green {
+
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    color: var(--green-light);
+
+}
+
+.btn-green:hover {
+    background-color: var(--green-active);
+    color: white;
+}
+
+
+.btn-purple {
+
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+    color: var(--purple-light);
+
+}
+
+.btn-purple:hover {
+    background-color: var(--purple-active);
+    color: white;
+}
+
+
+.btn-yellow {
+
+    border: 1px solid var(--yellow);
+    background-color: var(--yellow);
+    color: var(--yellow-light);
+
+}
+
+.btn-yellow:hover {
+    background-color: var(--yellow-active);
+    color: white;
+}
+
+.btn-dark {
+
+    border: 1px solid var(--dark);
+    background-color: var(--dark);
+    color: var(--dark-light);
+
+}
+
+.btn-dark:hover {
+    background-color: var(--dark-active);
+    color: white;
+}
+
+.btn-gray {
+
+    border: 1px solid var(--gray);
+    background-color: var(--gray);
+    color: var(--gray-light);
+
+}
+
+.btn-gray:hover {
+    background-color: var(--gray-active);
+    color: white;
+}
+
+.btn-red {
+
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    color: var(--red-light);
+}
+
+.btn-red:hover {
+    background-color: var(--red-active);
+    color: white;
+}
+
+
+

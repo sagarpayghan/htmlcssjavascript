@@ -1,0 +1,9 @@
+.datetime {
+    font-family: sans-serif;
+    padding-inline-start: 1px;
+    cursor: default;
+    align-items: center;
+    display: inline-flex;
+    overflow: hidden;
+    padding: 0px;
+}
